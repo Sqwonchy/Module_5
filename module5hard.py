@@ -12,8 +12,6 @@ class User:
         self.nickname = nickname
         self.password = hash(password)
         self.age = age
-    def __contains__(self, item):
-        return item in self.password
     def __eq__(self, other):
         return self.password == hash(other)
 ####################################################################
